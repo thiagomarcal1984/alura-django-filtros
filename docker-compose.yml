@@ -1,0 +1,34 @@
+version: '3.9'
+
+services:
+  django:
+    container_name: django
+    build: .
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    links:
+      - db:db
+    working_dir: /code
+    volumes:
+      - .:/code
+    # entrypoint: chmod +x fist-time.sh && sh -c "first-time.sh"
+    networks:
+      - default
+  
+  db:
+    image: postgres:14
+    container_name: db
+    environment:
+      POSTGRES_DB: 'alura-receita'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+    ports:
+      - "5432:5432"
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge

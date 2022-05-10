@@ -1,0 +1,41 @@
+[
+  {
+    "model": "receitas.Receita",
+    "pk": 1,
+    "fields" : {
+      "nome_receita": "Lasanha",
+      "ingredientes": "Todos",
+      "modo_preparo": "Rápido",
+      "tempo_preparo": 0,
+      "rendimento": "10 porções",
+      "categoria": "Receita",
+      "date_receita": "2022-05-01"
+    }
+  },
+  {
+    "model": "receitas.Receita",
+    "pk": 2,
+    "fields" : {
+      "nome_receita": "Sopa de legumes",
+      "ingredientes": "Todos",
+      "modo_preparo": "Rápido",
+      "tempo_preparo": 0,
+      "rendimento": "10 porções",
+      "categoria": "Receita",
+      "date_receita": "2022-05-01"
+    }
+  },
+  {
+    "model": "receitas.Receita",
+    "pk": 3,
+    "fields" : {
+      "nome_receita": "Sorvete",
+      "ingredientes": "Todos",
+      "modo_preparo": "Rápido",
+      "tempo_preparo": 0,
+      "rendimento": "10 porções",
+      "categoria": "Receita",
+      "date_receita": "2022-05-01"
+    }
+  }
+]
