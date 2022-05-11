@@ -7,9 +7,7 @@ ENV DJANGO_SUPERUSER_PASSWORD=thiago
 ENV DJANGO_SUPERUSER_EMAIL=thiago@thiago.com
 
 RUN python -m pip install --upgrade pip
-RUN pip install django==3.2
-RUN pip install gunicorn==20.1.0
-RUN pip install psycopg2-binary==2.9.3
+RUN pip install -r requirements.txt
 
 # RUN python manage.py collectstatic
 
