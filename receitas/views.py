@@ -3,7 +3,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import Receita
 
 def index(request):
-    receitas = Receita.objects.all()
+    receitas = Receita.objects.filter(publicado=True)
     # Execute o comando python manage.py loaddata initial-data.json 
     # para carregar os dados iniciais do modelo.
 
