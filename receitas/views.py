@@ -21,3 +21,6 @@ def index(request):
 def receita(request, pk):
     receita = get_object_or_404(Receita, pk=pk)
     return render(request, 'receita.html', {'receita' : receita})
+
+def buscar(request):
+    return render(request, 'buscar.html')
